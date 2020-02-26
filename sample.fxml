@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea layoutX="20.0" layoutY="14.0" prefHeight="327.0" prefWidth="442.0" />
+      <Button alignment="CENTER" layoutX="507.0" layoutY="355.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="ENVIAR" />
+      <Button alignment="CENTER" layoutX="499.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="CONNECT" />
+      <TextArea layoutX="20.0" layoutY="348.0" prefHeight="38.0" prefWidth="442.0" promptText="ENTER MESSAGE ...." />
+      <TextArea layoutX="471.0" layoutY="57.0" prefHeight="38.0" prefWidth="155.0" promptText="ENTER IP ADRESS" />
+      <TextArea layoutX="471.0" layoutY="140.0" prefHeight="38.0" prefWidth="155.0" promptText="ENTER PORT" />
+   </children>
+</Pane>
