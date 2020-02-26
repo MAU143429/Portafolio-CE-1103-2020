@@ -3,13 +3,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
    <children>
-      <TextArea layoutX="20.0" layoutY="14.0" prefHeight="327.0" prefWidth="442.0" />
-      <Button alignment="CENTER" layoutX="507.0" layoutY="355.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="ENVIAR" />
-      <Button alignment="CENTER" layoutX="499.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="CONNECT" />
-      <TextArea layoutX="20.0" layoutY="348.0" prefHeight="38.0" prefWidth="442.0" promptText="ENTER MESSAGE ...." />
-      <TextArea layoutX="471.0" layoutY="57.0" prefHeight="38.0" prefWidth="155.0" promptText="ENTER IP ADRESS" />
-      <TextArea layoutX="471.0" layoutY="140.0" prefHeight="38.0" prefWidth="155.0" promptText="ENTER PORT" />
+      <Pane prefHeight="310.0" prefWidth="493.0">
+         <children>
+            <Button fx:id="btnsms" layoutX="350.0" layoutY="270.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="25.0" prefWidth="87.0" text="SEND" />
+            <Button fx:id="connect" layoutX="360.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="CONNECT" />
+            <TextArea fx:id="chat" editable="false" layoutX="14.0" layoutY="15.0" prefHeight="235.0" prefWidth="319.0" />
+            <TextArea fx:id="sendbox" layoutX="14.0" layoutY="263.0" prefHeight="38.0" prefWidth="319.0" promptText="ENTER MESSAGE...." />
+            <TextField fx:id="ip" alignment="CENTER" layoutX="347.0" layoutY="48.0" prefHeight="25.0" prefWidth="129.0" promptText="ENTER IP ADRESS" />
+            <TextField fx:id="port" alignment="CENTER" layoutX="347.0" layoutY="107.0" prefHeight="25.0" prefWidth="129.0" promptText="ENTER PORT" />
+         </children>
+      </Pane>
    </children>
-</Pane>
+</GridPane>
