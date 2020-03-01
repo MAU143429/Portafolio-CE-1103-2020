@@ -7,6 +7,8 @@ public class Controller {
     public TextArea chat;
     public TextArea sendbox;
 
+
+
     public void pressButton(ActionEvent event){
         String text = sendbox.getText();
         sendbox.clear();
